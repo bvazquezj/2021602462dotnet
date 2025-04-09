@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\proyecto\\ProyectoCalificaciones\\ProyectoCalificaciones.csproj",
+      "projectUniqueName": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\PrimerParcial\\proyecto\\ProyectoCalificaciones\\ProyectoCalificaciones.csproj",
       "projectName": "ProyectoCalificaciones",
-      "projectPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\proyecto\\ProyectoCalificaciones\\ProyectoCalificaciones.csproj",
+      "projectPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\PrimerParcial\\proyecto\\ProyectoCalificaciones\\ProyectoCalificaciones.csproj",
       "packagesPath": "C:\\Users\\bvazq\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\proyecto\\ProyectoCalificaciones\\obj\\",
+      "outputPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\PrimerParcial\\proyecto\\ProyectoCalificaciones\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bvazq\\AppData\\Roaming\\NuGet\\NuGet.Config"

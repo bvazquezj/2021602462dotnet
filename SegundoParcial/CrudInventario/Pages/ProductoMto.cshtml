@@ -1,0 +1,35 @@
+﻿@page
+@model ProductiMtoModel
+@{
+    ViewData["Title"] = "Producto MTO";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="d-flex p-4 justify-content-center align-items-center vh-90">
+    <div class="card p-5 shadow-sm" style="width: 50%;">
+        <h3 class="text-center mb-4">Producto MTO</h3>
+        <form asp-action="" method="POST">
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="Nombre" id="Nombre"
+                    placeholder="Ingrese el nombre del producto" />
+            </div>
+            <div class="mb-3">
+                <label for="Precio" class="form-label">Precio</label>
+                <input type="text" class="form-control" name="Precio" id="Precio"
+                    placeholder="Ingrese el precio del producto" />
+            </div>
+            <div class="mb-3">
+                <label for="Stock" class="form-label">Stock</label>
+                <input type="text" class="form-control" name="Stock" id="Stock"
+                    placeholder="Ingrese la cantidad en stock" />
+            </div>
+            <div class="mb-3">
+                <label for="Descripción" class="form-label">Descripción</label>
+                <input type="text" class="form-control" name="Descripción" id="Descripción"
+                    placeholder="Ingrese una descripción del producto" />
+            </div>
+            <button class="btn btn-primary w-100">Guardar</button>
+        </form>
+    </div>
+</div>
