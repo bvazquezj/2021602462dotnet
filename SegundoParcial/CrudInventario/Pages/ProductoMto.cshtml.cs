@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CrudInventario.Entity;
+using CrudInventario.utils;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace CrudInventario.Pages;
@@ -16,10 +18,14 @@ public class ProductiMtoModel : PageModel
     {
     }
 
-    public void OnPost(Producto producto)
+    public ActionResult OnPost(Producto producto)
     {
+        string sql = "INSERT INTO productos (name,stock,price,descript) VALUES (@name,@stock,@price,@descript)";
+        SqlConnector con = new SqlConnector("localhost", "storedotnet", "root", "Dayamoon12");
+        con.Insert(sql, producto);
+        TempData["Success"] = "Producto insertado correctamente.";
         
-
+        return RedirectToPage("ListaProducto");
     }
 }
 

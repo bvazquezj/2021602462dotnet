@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0MpzHJ/G7Dk=",
+  "dgSpecHash": "jigvQAiqo3A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
+  "projectFilePath": "C:\\Users\\bvazq\\OneDrive\\Documentos\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bvazq\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\bvazq\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
@@ -33,12 +33,5 @@
     "C:\\Users\\bvazq\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\bvazq\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Host desconocido. (api.nuget.org:443)"
-    }
-  ]
+  "logs": []
 }

@@ -1552,11 +1552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
+      "projectUniqueName": "C:\\Users\\bvazq\\OneDrive\\Documentos\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
       "projectName": "CrudInventario",
-      "projectPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
+      "projectPath": "C:\\Users\\bvazq\\OneDrive\\Documentos\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\CrudInventario.csproj",
       "packagesPath": "C:\\Users\\bvazq\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bvazq\\Documents\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\obj\\",
+      "outputPath": "C:\\Users\\bvazq\\OneDrive\\Documentos\\Tareas\\Octavo Semestre\\.net\\SegundoParcial\\CrudInventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bvazq\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1613,16 +1613,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Host desconocido. (api.nuget.org:443)"
-    }
-  ]
+  }
 }

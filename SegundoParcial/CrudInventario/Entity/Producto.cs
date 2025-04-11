@@ -1,4 +1,5 @@
-using System.Data;
+namespace CrudInventario.Entity;
+
 public class Producto
 {
     public required int Id { get; set; }
