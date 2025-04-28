@@ -28,12 +28,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bvazq/OneDrive/Documentos/Tareas/Octavo Semestre/.net/SegundoParcial/CrudInventario/Pages/ListaProducto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFQcm9kdWN0by5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/bvazq/OneDrive/Documentos/Tareas/Octavo Semestre/.net/SegundoParcial/CrudInventario/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bvazq/OneDrive/Documentos/Tareas/Octavo Semestre/.net/SegundoParcial/CrudInventario/Pages/ProductoLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9MaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bvazq/OneDrive/Documentos/Tareas/Octavo Semestre/.net/SegundoParcial/CrudInventario/Pages/ProductoMto.cshtml]

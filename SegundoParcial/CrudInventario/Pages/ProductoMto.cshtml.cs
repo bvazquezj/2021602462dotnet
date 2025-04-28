@@ -25,7 +25,7 @@ public class ProductiMtoModel : PageModel
         con.Insert(sql, producto);
         TempData["Success"] = "Producto insertado correctamente.";
         
-        return RedirectToPage("ListaProducto");
+        return RedirectToPage("ProductoLista");
     }
 }
 
