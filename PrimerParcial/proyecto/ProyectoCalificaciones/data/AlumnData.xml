@@ -1,0 +1,272 @@
+<base>
+    <Alumno>
+        <id>1</id>
+        <apellidos>Vazquez Juarez</apellidos>
+        <nombre>Brandon</nombre>
+        <parcial1>10</parcial1>
+        <parcial2>8</parcial2>
+        <parcial3>10</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>2</id>
+        <apellidos>Garcia Lopez</apellidos>
+        <nombre>Maria</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>6</parcial2>
+        <parcial3>5</parcial3>
+        <ext>8</ext>
+    </Alumno>
+    <Alumno>
+        <id>3</id>
+        <apellidos>Martinez Sanchez</apellidos>
+        <nombre>Jose</nombre>
+        <parcial1>9</parcial1>
+        <parcial2>8</parcial2>
+        <parcial3>7</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>4</id>
+        <apellidos>Hernandez Ramirez</apellidos>
+        <nombre>Laura</nombre>
+        <parcial1>6</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>4</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>5</id>
+        <apellidos>Lopez Perez</apellidos>
+        <nombre>Juan</nombre>
+        <parcial1>8</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>6</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>6</id>
+        <apellidos>Gonzalez Torres</apellidos>
+        <nombre>Andrea</nombre>
+        <parcial1>10</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>8</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>7</id>
+        <apellidos>Rodriguez Díaz</apellidos>
+        <nombre>Pedro</nombre>
+        <parcial1>5</parcial1>
+        <parcial2>4</parcial2>
+        <parcial3>3</parcial3>
+        <ext>6</ext>
+    </Alumno>
+    <Alumno>
+        <id>8</id>
+        <apellidos>Fernandez Ruiz</apellidos>
+        <nombre>Lucia</nombre>
+        <parcial1>9</parcial1>
+        <parcial2>8</parcial2>
+        <parcial3>7</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>9</id>
+        <apellidos>Martinez Gomez</apellidos>
+        <nombre>Diego</nombre>
+        <parcial1>6</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>4</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>10</id>
+        <apellidos>Garcia Hernandez</apellidos>
+        <nombre>Carla</nombre>
+        <parcial1>8</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>6</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>11</id>
+        <apellidos>Lopez Martinez</apellidos>
+        <nombre>Fernando</nombre>
+        <parcial1>0</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>5</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>12</id>
+        <apellidos>Gonzalez Rodriguez</apellidos>
+        <nombre>Paula</nombre>
+        <parcial1>4</parcial1>
+        <parcial2>8</parcial2>
+        <parcial3>9</parcial3>
+        <ext>8</ext>
+    </Alumno>
+    <Alumno>
+        <id>13</id>
+        <apellidos>Rodriguez Fernandez</apellidos>
+        <nombre>Javier</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>9</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>14</id>
+        <apellidos>Fernandez Lopez</apellidos>
+        <nombre>Elena</nombre>
+        <parcial1>10</parcial1>
+        <parcial2>10</parcial2>
+        <parcial3>10</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>15</id>
+        <apellidos>Martinez Gonzalez</apellidos>
+        <nombre>Raul</nombre>
+        <parcial1>6</parcial1>
+        <parcial2>4</parcial2>
+        <parcial3>8</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>16</id>
+        <apellidos>Garcia Rodriguez</apellidos>
+        <nombre>Isabel</nombre>
+        <parcial1>8</parcial1>
+        <parcial2>8</parcial2>
+        <parcial3>8</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>17</id>
+        <apellidos>Lopez Fernandez</apellidos>
+        <nombre>Antonio</nombre>
+        <parcial1>9</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>10</parcial3>
+        <ext>6</ext>
+    </Alumno>
+    <Alumno>
+        <id>18</id>
+        <apellidos>Gonzalez Martinez</apellidos>
+        <nombre>Laura</nombre>
+        <parcial1>10</parcial1>
+        <parcial2>10</parcial2>
+        <parcial3>8</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>19</id>
+        <apellidos>Rodriguez Garcia</apellidos>
+        <nombre>Daniel</nombre>
+        <parcial1>8</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>9</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>20</id>
+        <apellidos>Fernandez Lopez</apellidos>
+        <nombre>Maria</nombre>
+        <parcial1>4</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>6</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>21</id>
+        <apellidos>Martinez Gonzalez</apellidos>
+        <nombre>Jose</nombre>
+        <parcial1>1</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>9</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>22</id>
+        <apellidos>Garcia Rodriguez</apellidos>
+        <nombre>Laura</nombre>
+        <parcial1>9</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>9</parcial3>
+        <ext>8</ext>
+    </Alumno>
+    <Alumno>
+        <id>23</id>
+        <apellidos>Lopez Fernandez</apellidos>
+        <nombre>Pedro</nombre>
+        <parcial1>8</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>9</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>24</id>
+        <apellidos>Gonzalez Martinez</apellidos>
+        <nombre>Elena</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>4</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>25</id>
+        <apellidos>Rodriguez Garcia</apellidos>
+        <nombre>Raul</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>6</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>26</id>
+        <apellidos>Fernandez Lopez</apellidos>
+        <nombre>Isabel</nombre>
+        <parcial1>10</parcial1>
+        <parcial2>9</parcial2>
+        <parcial3>10</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>27</id>
+        <apellidos>Gonzalez Perez</apellidos>
+        <nombre>Antonio</nombre>
+        <parcial1>5</parcial1>
+        <parcial2>10</parcial2>
+        <parcial3>5</parcial3>
+        <ext>6</ext>
+    </Alumno>
+    <Alumno>
+        <id>28</id>
+        <apellidos>Garcia Rodriguez</apellidos>
+        <nombre>Laura</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>7</parcial3>
+        <ext>np</ext>
+    </Alumno>
+    <Alumno>
+        <id>29</id>
+        <apellidos>Lopez Fernandez</apellidos>
+        <nombre>Daniel</nombre>
+        <parcial1>6</parcial1>
+        <parcial2>5</parcial2>
+        <parcial3>4</parcial3>
+        <ext>7</ext>
+    </Alumno>
+    <Alumno>
+        <id>30</id>
+        <apellidos>Gonzalez Marquez</apellidos>
+        <nombre>Maria</nombre>
+        <parcial1>7</parcial1>
+        <parcial2>7</parcial2>
+        <parcial3>7</parcial3>
+        <ext>np</ext>
+    </Alumno>
+</base>

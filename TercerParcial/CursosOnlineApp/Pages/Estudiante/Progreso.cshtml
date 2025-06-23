@@ -1,0 +1,42 @@
+@page
+@model CursosOnlineApp.Pages.Estudiante.ProgresoModel
+@{
+    ViewData["Title"] = "Progreso de Cursos";
+    Layout = "_Layout";
+}
+
+<div class="min-h-screen bg-[#f8f9fc] py-8 px-4 md:px-12 font-sans max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-[#0e121b] mb-8">Progreso de tus cursos</h1>
+
+    @if (Model.CursosConProgreso.Count == 0)
+    {
+        <p class="text-center text-gray-600">No estás inscrito en ningún curso.</p>
+    }
+    else
+    {
+        <div class="space-y-6">
+            @foreach (var curso in Model.CursosConProgreso)
+            {
+                <div class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex flex-col md:flex-row md:items-center md:gap-8 w-full md:w-auto">
+                        <h2 class="text-xl font-semibold text-[#0e121b]">@curso.Titulo</h2>
+
+                        <div class="flex items-center gap-4 mt-3 md:mt-0">
+                            <span class="font-semibold text-[#4e6797]">Progreso:</span>
+                            <span class="font-bold text-[#306de8]">@curso.Porcentaje %</span>
+                        </div>
+
+                        <div class="w-full md:w-48 bg-[#e7ebf3] rounded-full h-4 overflow-hidden mt-2 md:mt-0">
+                            <div class="bg-[#306de8] h-4 rounded-full" style="width:@curso.Porcentaje%"></div>
+                        </div>
+                    </div>
+
+                    <button class="bg-[#306de8] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#2453b3] transition"
+                            onclick="location.href='@Url.Page("/Cursos/Detalle", new { id = curso.CursoId })'">
+                        Continuar curso
+                    </button>
+                </div>
+            }
+        </div>
+    }
+</div>

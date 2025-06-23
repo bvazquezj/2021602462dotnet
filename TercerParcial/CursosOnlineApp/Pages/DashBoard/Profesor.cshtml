@@ -1,0 +1,182 @@
+@page
+@model CursosOnlineApp.Pages.DashBoard.ProfesorModel;
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Panel de Profesor";
+    Layout = "_Layout";
+    var user = await UserManager.GetUserAsync(User);
+    var primerNombre = user?.Nombre?.Split(' ')[0];
+}
+
+<div class="min-h-screen bg-[#f8f9fc] py-8 px-4 md:px-12 font-sans">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-[#0e121b]">¡Bienvenido, @primerNombre</h1>
+                <p class="text-[#4e6797] mt-1">Este es tu panel de profesor. Gestiona tus cursos, revisa tareas y
+                    mantente al tanto de tus estudiantes.</p>
+            </div>
+            <div class="flex gap-3">
+                <a asp-page="/Cursos/Crear"
+                    class="flex items-center gap-2 bg-[#306de8] text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#2453b3] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Nuevo curso
+                </a>
+                <button
+                    class="flex items-center gap-2 bg-[#e7ebf3] text-[#306de8] px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#d0d7e7] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Notificaciones
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 flex flex-col gap-8">
+
+                <!-- Course Analytics -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M3 3v18h18" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 13l3-3 4 4 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Analítica de cursos</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span class="text-3xl font-bold text-[#306de8]">@Model.TotalInscritos</span>
+                            <span class="text-[#4e6797] mt-1">Inscritos</span>
+                        </div>
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span
+                                class="text-3xl font-bold text-[#306de8]">@Model.ProgresoPromedio.ToString("0.0")%</span>
+                            <span class="text-[#4e6797] mt-1">Progreso promedio</span>
+                        </div>
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span class="text-3xl font-bold text-[#306de8]">@Model.CursosDelProfesor.Count</span>
+                            <span class="text-[#4e6797] mt-1">Cursos activos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Management Tools -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Gestión de cursos</h2>
+                    </div>
+                    <div class="space-y-4">
+                        @foreach (var curso in Model.CursosDelProfesor)
+                        {
+                            <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-4">
+                                <div>
+                                    <p class="font-semibold text-[#0e121b]">Curso: @curso.Titulo</p>
+                                    <span class="text-sm text-[#4e6797]">@curso.Inscripciones.Count inscritos</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <a href="/Cursos/Editar/@curso.Id"
+                                        class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition">Editar</a>
+                                    <a href="/Cursos/Detalle/@curso.Id"
+                                        class="bg-[#e7ebf3] text-[#306de8] px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#d0d7e7] transition">Ver</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- Review Assignments/Exams -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-6 0h6" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Tareas y exámenes entregados</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between bg-[#e7ebf3] rounded-xl p-4">
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Python Intermedio - Proyecto Final</p>
+                                <span class="text-sm text-[#4e6797]">15 entregas pendientes</span>
+                            </div>
+                            <button
+                                class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition">Revisar</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#e7ebf3] rounded-xl p-4">
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">JavaScript - Examen Parcial</p>
+                                <span class="text-sm text-[#4e6797]">8 entregas pendientes</span>
+                            </div>
+                            <button
+                                class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition">Revisar</button>
+                        </div>
+                        <!-- ...más tareas -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-col gap-8">
+                <!-- Notifications / Messages -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 15a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v8zm-2 0V7H5v8h14zm-7 2v2m0 0h2m-2 0H9"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Notificaciones y mensajes</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-[#e7ebf3] rounded-lg p-3 flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#306de8] mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 3h-6a2 2 0 00-2 2v2a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Nuevo mensaje de estudiante</p>
+                                <p class="text-[#4e6797] text-sm">Consulta sobre la entrega del proyecto final.</p>
+                                <span class="text-xs text-[#306de8] font-semibold">Hace 1 hora</span>
+                            </div>
+                        </div>
+                        <div class="bg-[#e7ebf3] rounded-lg p-3 flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#306de8] mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 3h-6a2 2 0 00-2 2v2a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Recordatorio de revisión</p>
+                                <p class="text-[#4e6797] text-sm">Tienes tareas pendientes por revisar.</p>
+                                <span class="text-xs text-[#306de8] font-semibold">Hace 3 horas</span>
+                            </div>
+                        </div>
+                        <!-- ...más notificaciones -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

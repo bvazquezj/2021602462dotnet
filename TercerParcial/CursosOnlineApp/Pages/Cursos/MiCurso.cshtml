@@ -1,0 +1,25 @@
+@page "{id:int}"
+@model MiCursoModel
+@{
+    ViewData["Title"] = "Contenido del Curso";
+}
+
+<h2>@Model.Curso.Titulo</h2>
+<p>@Model.Curso.Descripcion</p>
+
+<h3>Lecciones</h3>
+@if (Model.Curso.Lecciones.Any())
+{
+    <ul>
+    @foreach (var leccion in Model.Curso.Lecciones)
+    {
+        <li>
+            @leccion.Orden - @leccion.Titulo
+        </li>
+    }
+    </ul>
+}
+else
+{
+    <p>No hay lecciones disponibles.</p>
+}

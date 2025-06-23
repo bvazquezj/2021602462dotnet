@@ -1,0 +1,15 @@
+﻿@page
+@model DetailsModel
+
+<h2>Detalles del Estudiante</h2>
+
+<div>
+    <strong>Nombre:</strong> @Model.Student.FullName
+</div>
+<div>
+    <strong>Fecha de nacimiento:</strong> @Model.Student.BirthDate.ToShortDateString()
+</div>
+<p>
+    <a asp-page="Edit" asp-route-id="@Model.Student.Id">Editar</a> |
+    <a asp-page="Index">Volver</a>
+</p>

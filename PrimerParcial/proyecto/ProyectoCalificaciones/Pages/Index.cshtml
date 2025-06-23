@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="text-center">
+    <h1 class="text-5xl font-extrabold text-gray-900 mb-4">@ViewData["title"]</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative p-5 bg-white border-2 border-indigo-500 rounded-lg shadow-lg flex flex-col">
+            <span class="absolute inset-0 bg-indigo-500 rounded-lg -z-10 translate-x-1 translate-y-1"></span>
+            <h3 class="text-lg font-bold text-gray-800 text-center">Aprovechamiento general</h3>
+            <div class="flex-1 flex justify-center items-center">
+                <canvas id="myChart1" class="h-full w-full"></canvas>
+            </div>
+        </div>
+
+        <div class="relative p-5 bg-white border-2 border-purple-500 rounded-lg shadow-lg flex flex-col">
+            <span class="absolute inset-0 bg-purple-500 rounded-lg -z-10 translate-x-1 translate-y-1"></span>
+            <h3 class="text-lg font-bold text-gray-800 text-center">Mejores Alumnos</h3>
+            <div class="flex-1 flex justify-center items-center">
+                <canvas id="myChart2" class="h-full w-full"></canvas>
+            </div>
+        </div>
+
+        <div class="relative p-5 bg-white border-2 border-blue-400 rounded-lg shadow-lg flex flex-col">
+            <span class="absolute inset-0 bg-blue-400 rounded-lg -z-10 translate-x-1 translate-y-1"></span>
+            <h3 class="text-lg font-bold text-gray-800 text-center">Peores Alumnos</h3>
+            <div class="flex-1 flex justify-center items-center">
+                <canvas id="myChart3" class="h-full w-full"></canvas>
+            </div>
+        </div>
+
+        <div class="relative p-5 bg-white border-2 border-yellow-400 rounded-lg shadow-lg flex flex-col">
+            <span class="absolute inset-0 bg-yellow-400 rounded-lg -z-10 translate-x-1 translate-y-1"></span>
+            <h3 class="text-lg font-bold text-gray-800 text-center">Aprobados y reprobados</h3>
+            <div class="flex-1 flex justify-center items-center">
+                <canvas id="myChart4" class="h-full w-full"></canvas>
+            </div>
+        </div>
+
+        <div class="col-span-2 relative p-5 bg-white border-2 border-green-500 rounded-lg shadow-lg flex flex-col">
+            <span class="absolute inset-0 bg-green-500 rounded-lg -z-10 translate-x-1 translate-y-1"></span>
+            <h3 class="text-lg font-bold text-gray-800 text-center">Moda de Calificaciones</h3>
+            <div class="flex-1 flex justify-center items-center">
+                <canvas id="myChart5" class="h-full w-full"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var data = @Html.Raw(Json.Serialize(Model.data2))
+        console.log(data);
+
+    const chartsConfig = [
+        { id: 'myChart1', type: 'pie', labels: ['Aprovechamiento General', 'Faltante'], data: [data[0].promedio * 10, 100 - (data[0].promedio * 10)], bgColors: ['#36A2EB', '#4CAF50'] },
+        { id: 'myChart2', type: 'bar', labels: data[0].mejores.map(a => a.nombre), data: data[0].mejores.map(a => a.promedio), bgColors: ['#4CAF50'] },
+        { id: 'myChart3', type: 'bar', labels: data[0].peores.map(a => a.nombre), data: data[0].peores.map(a => a.promedio), bgColors: ['#F44336'] },
+        { id: 'myChart4', type: 'pie', labels: ['Aprobados', 'Reprobados'], data: [data[0].porcentaje.aprobados, data[0].porcentaje.reprobados], bgColors: ['#36A2EB', '#FF6384'] },
+        { id: 'myChart5', type: 'bar', labels: ['Moda'], data: [data[0].moda], bgColors: ['#FF9800'],options: { responsive: true, maintainAspectRatio: false, scales: { y: { suggestedMin: 1, suggestedMax: 10, ticks: { stepSize: 1 } } } } }
+    ];
+
+    chartsConfig.forEach(chart => {
+        var ctx = document.getElementById(chart.id).getContext('2d');
+        new Chart(ctx, {
+            type: chart.type,
+            data: {
+                labels: chart.labels,
+                datasets: [{
+                    label: chart.labels[0],
+                    data: chart.data,
+                    backgroundColor: chart.bgColors
+                }]
+            },
+            options: chart.options || {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    });
+
+</script>

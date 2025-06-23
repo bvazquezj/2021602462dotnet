@@ -1,0 +1,114 @@
+@page "{id:int}"
+@model CursosOnlineApp.Pages.Lecciones.VerModel
+@{
+    ViewData["Title"] = "Ver Lección";
+}
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumb -->
+    <nav class="flex mb-8" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="/Cursos/Detalle/@Model.Leccion.CursoId" class="text-gray-700 hover:text-blue-600">
+                    @Model.Leccion.Curso?.Titulo ?? "Curso"
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="ml-1 text-blue-600">@Model.Leccion.Titulo</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- Main Content -->
+        <div class="lg:col-span-3">
+            <!-- Video Player Cloudinary -->
+            @if (!string.IsNullOrEmpty(Model.Leccion.VideoUrl))
+            {
+                <div class="mb-8">
+                    <video id="videoPlayer" class="w-full rounded" controls>
+                        <source src="@Model.Leccion.VideoUrl" type="video/mp4" />
+                        Tu navegador no admite la reproducción de video.
+                    </video>
+                </div>
+            }
+
+            <!-- Lesson Content -->
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <h1 class="text-2xl font-bold text-gray-900 mb-6">@Model.Leccion.Titulo</h1>
+
+                <div class="mb-8 text-gray-600 leading-relaxed whitespace-pre-line">
+                    @Model.Leccion.Contenido
+                </div>
+
+                <div class="flex justify-between pt-6 border-t border-gray-200">
+                    @if (Model.LeccionAnteriorId != null)
+                    {
+                        <a href="/Lecciones/Ver/@Model.LeccionAnteriorId" class="text-gray-600 hover:text-blue-600">←
+                            Lección anterior</a>
+                    }
+                    else
+                    {
+                        <span></span>
+                    }
+
+                    @if (Model.LeccionSiguienteId != null)
+                    {
+                        <a href="/Lecciones/Ver/@Model.LeccionSiguienteId"
+                            class="text-gray-600 hover:text-blue-600">Siguiente lección →</a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6">
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Progreso</h3>
+                <div class="mb-4">
+                    <div class="flex justify-between text-sm mb-2">
+                        <span class="text-gray-600">Progreso del curso</span>
+                        <span class="font-medium text-gray-900">@Model.PorcentajeProgreso%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: @Model.PorcentajeProgreso%"></div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">@Model.LeccionesCompletadas de @Model.TotalLecciones lecciones
+                    completadas</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script>
+        const video = document.getElementById('videoPlayer');
+        if (video) {
+            video.addEventListener('ended', async () => {
+                try {
+                    const response = await fetch(`/Lecciones/Ver?id=@Model.Leccion.Id`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                        },
+                        body: JSON.stringify({})
+                    });
+
+                    const result = await response.json();
+                    console.log(result.message);
+                } catch (e) {
+                    console.error("Error al marcar la lección como vista:", e);
+                }
+            });
+        }
+    </script>
+}

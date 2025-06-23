@@ -1,0 +1,223 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Página principal";
+}
+
+<div class="container">
+    <div class="p-4 sm:p-4">
+        <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat sm:gap-8 sm:rounded-xl items-start justify-end px-4 pb-10 sm:px-10"
+            style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/ba052526-562e-4ca9-823b-37f5b1417168.png");'>
+            <h1
+                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl sm:font-black sm:leading-tight sm:tracking-[-0.033em] text-center">
+                Domina las habilidades más recientes con nuevos cursos de IA, liderazgo y más
+            </h1>
+            <a asp-page="/Account/Login" asp-area="Identity"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 sm:h-12 sm:px-5 bg-[#306de8] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em]">
+                <span class="truncate">Comenzar</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="flex gap-3 p-3 flex-wrap pr-4">
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Todos</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Inteligencia Artificial</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Liderazgo</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Marketing</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Gestión de Producto</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Desarrollo de Negocios</p>
+    </div>
+</div>
+<h2 class="text-[#0e121b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recomendados para ti
+</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+    <div class="flex flex-col gap-3 pb-3">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/31f8a84d-45c1-4f64-87f7-bac78f88088e.png");'>
+        </div>
+        <div>
+            <p class="text-[#0e121b] text-base font-medium leading-normal">Sesgo inconsciente en IA</p>
+            <p class="text-[#4e6797] text-sm font-normal leading-normal">por Dra. Megha Rajan</p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 pb-3">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/0fd9effb-54e9-4b8b-881d-816001db57c4.png");'>
+        </div>
+        <div>
+            <p class="text-[#0e121b] text-base font-medium leading-normal">Principios de Liderazgo</p>
+            <p class="text-[#4e6797] text-sm font-normal leading-normal">por Dave Peterson</p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 pb-3">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4bc4e921-f2be-4310-adc2-cf756a803b29.png");'>
+        </div>
+        <div>
+            <p class="text-[#0e121b] text-base font-medium leading-normal">Introducción a la Gestión de Producto</p>
+            <p class="text-[#4e6797] text-sm font-normal leading-normal">por Sara Thompson</p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 pb-3">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/d38f3958-3b3c-44d2-bb55-8a6d3514a64a.png");'>
+        </div>
+        <div>
+            <p class="text-[#0e121b] text-base font-medium leading-normal">Fundamentos de Marketing de Crecimiento</p>
+            <p class="text-[#4e6797] text-sm font-normal leading-normal">por Ethan Chen</p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 pb-3">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/bce399b1-0863-4700-bbfd-384cd0b97534.png");'>
+        </div>
+        <div>
+            <p class="text-[#0e121b] text-base font-medium leading-normal">Construyendo Equipos Efectivos</p>
+            <p class="text-[#4e6797] text-sm font-normal leading-normal">por Emily Johnson</p>
+        </div>
+    </div>
+</div>
+<h2 class="text-[#0e121b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Explora por tema</h2>
+<div class="flex gap-3 p-3 overflow-x-hidden">
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Inteligencia Artificial</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Ciencia de Datos</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Diseño</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Marketing</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Gestión de Producto</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Desarrollo de Software</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Negocios</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+    <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-2">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Desarrollo Profesional</p>
+        <div class="text-[#0e121b]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                viewBox="0 0 256 256">
+                <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                </path>
+            </svg>
+        </div>
+    </button>
+</div>
+<h2 class="text-[#0e121b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Filtrar por dificultad
+</h2>
+<div class="flex gap-3 p-3 overflow-x-hidden">
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Principiante</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Intermedio</p>
+    </div>
+    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#e7ebf3] pl-4 pr-4">
+        <p class="text-[#0e121b] text-sm font-medium leading-normal">Avanzado</p>
+    </div>
+</div>
+<h2 class="text-[#0e121b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Rango de precios</h2>
+<div class="container">
+    <div class="relative flex w-full flex-col items-start justify-between gap-3 p-4 sm:flex-row">
+        <p class="text-[#0e121b] text-base font-medium leading-normal w-full shrink-[3]">$</p>
+        <div class="flex h-[38px] w-full pt-1.5">
+            <div class="flex h-1 w-full rounded-sm bg-[#d0d7e7] pl-[60%] pr-[15%]">
+                <div class="relative">
+                    <div class="absolute -left-3 -top-1.5 flex flex-col items-center gap-1">
+                        <div class="size-4 rounded-full bg-[#306de8]"></div>
+                        <p class="text-[#0e121b] text-sm font-normal leading-normal">0</p>
+                    </div>
+                </div>
+                <div class="h-1 flex-1 rounded-sm bg-[#306de8]"></div>
+                <div class="relative">
+                    <div class="absolute -left-3 -top-1.5 flex flex-col items-center gap-1">
+                        <div class="size-4 rounded-full bg-[#306de8]"></div>
+                        <p class="text-[#0e121b] text-sm font-normal leading-normal">200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex px-4 py-3 justify-end">
+    <button
+        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#306de8] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]">
+        <span class="truncate">Aplicar filtros</span>
+    </button>
+</div>

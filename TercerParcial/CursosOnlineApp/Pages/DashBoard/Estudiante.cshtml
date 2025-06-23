@@ -1,0 +1,241 @@
+@page
+@model CursosOnlineApp.Pages.DashBoard.EstudianteModel
+
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Panel de Estudiante";
+    Layout = "_Layout";
+    var user = await UserManager.GetUserAsync(User);
+    var primerNombre = user?.Nombre?.Split(' ')[0];
+}
+
+<div class="min-h-screen bg-[#f8f9fc] py-8 px-4 md:px-12 font-sans">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-[#0e121b]">¡Bienvenido, @primerNombre</h1>
+                <p class="text-[#4e6797] mt-1">Este es tu panel de estudiante. Aquí puedes ver tu progreso,
+                    recomendaciones y próximas actividades.</p>
+            </div>
+            <div class="flex gap-3">
+                <button
+                    class="flex items-center gap-2 bg-[#306de8] text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#2453b3] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    En vivo
+                </button>
+                <button
+                    class="flex items-center gap-2 bg-[#e7ebf3] text-[#306de8] px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#d0d7e7] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Notificaciones
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                <!-- Course Progress -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 7v-6m0 0l-9-5m9 5l9-5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Progreso de tus cursos</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        @foreach (var curso in Model.Cursos)
+                        {
+                            <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-4 cursor-pointer hover:bg-[#e0e7ff]"
+                                onclick="location.href='@Url.Page("/Cursos/Detalle", new { id = curso.Id })'">
+                                <div>
+                                    <p class="font-semibold text-[#0e121b]">Curso: @curso.Nombre</p>
+                                    <div class="flex items-center gap-2 mt-1">
+                                        <span class="text-sm text-[#4e6797]">Progreso:</span>
+                                        <span class="text-sm font-bold text-[#306de8]">@curso.Porcentaje %</span>
+                                    </div>
+                                </div>
+                                <div class="w-40 bg-[#e7ebf3] rounded-full h-3 overflow-hidden">
+                                    <div class="bg-[#306de8] h-3 rounded-full" style="width:@curso.Porcentaje%"></div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- Recommended Courses -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 20l9-5-9-5-9 5 9 5zm0-10V4m0 6l9-5-9-5-9 5 9 5z" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Cursos recomendados</h2>
+                    </div>
+
+                    @if (Model.CursosRecomendados.Count == 0)
+                    {
+                        <p class="text-center text-gray-500">No hay cursos recomendados porque ya estás inscrito en todos.
+                        </p>
+                    }
+                    else
+                    {
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            @foreach (var curso in Model.CursosRecomendados)
+                            {
+                                <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col gap-2 shadow hover:shadow-lg transition">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                                            viewBox="0 0 24 24">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 7v-6m0 0l-9-5m9 5l9-5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="font-semibold text-[#0e121b]">@curso.Titulo</span>
+                                    </div>
+                                    <span class="text-sm text-[#4e6797]">Por @curso.Instructor?.Nombre ?? "Instructor
+                                        Desconocido"</span>
+                                    <button
+                                        class="mt-2 bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition"
+                                        onclick="location.href='@Url.Page("/Cursos/Detalle", new { id = curso.Id })'">
+                                        Ver curso
+                                    </button>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+
+                <!-- Announcements / Messages -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 15a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v8zm-2 0V7H5v8h14zm-7 2v2m0 0h2m-2 0H9"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Anuncios y mensajes</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-[#e7ebf3] rounded-lg p-3 flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#306de8] mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 3h-6a2 2 0 00-2 2v2a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Clase en vivo hoy a las 18:00</p>
+                                <p class="text-[#4e6797] text-sm">No olvides conectarte a la clase de Python Intermedio.
+                                </p>
+                                <span class="text-xs text-[#306de8] font-semibold">Hace 2 horas</span>
+                            </div>
+                        </div>
+                        <div class="bg-[#e7ebf3] rounded-lg p-3 flex items-start gap-3">
+                            <svg class="w-6 h-6 text-[#306de8] mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 3h-6a2 2 0 00-2 2v2a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Nuevo mensaje de tu instructor</p>
+                                <p class="text-[#4e6797] text-sm">Revisa el material adicional en la sección de
+                                    recursos.</p>
+                                <span class="text-xs text-[#306de8] font-semibold">Hace 1 día</span>
+                            </div>
+                        </div>
+                        <!-- ...más mensajes -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-col gap-8">
+                <!-- Quick Access to Live Classes -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M15 10l4.553-2.276A2 2 0 0020 6.382V5a2 2 0 00-2-2H6a2 2 0 00-2 2v1.382a2 2 0 00.447 1.342L9 10m6 0v4a2 2 0 01-2 2H7a2 2 0 01-2-2v-4m11 0l-4.553 2.276A2 2 0 0112 14.618V19a2 2 0 002 2h4a2 2 0 002-2v-4.382a2 2 0 00-.447-1.342L15 10z"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Clases en vivo</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-3">
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Python Intermedio</p>
+                                <span class="text-sm text-[#4e6797]">Hoy, 18:00</span>
+                            </div>
+                            <button
+                                class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition">Unirse</button>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-3">
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Diseño UX/UI</p>
+                                <span class="text-sm text-[#4e6797]">Mañana, 16:00</span>
+                            </div>
+                            <button
+                                class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2453b3] transition">Unirse</button>
+                        </div>
+                        <!-- ...más clases -->
+                    </div>
+                </div>
+
+                <!-- Calendar of Upcoming Activities -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Calendario de actividades</h2>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 bg-[#e7ebf3] rounded-xl p-3">
+                            <div
+                                class="flex flex-col items-center justify-center w-12 h-12 bg-[#306de8] text-white rounded-lg font-bold">
+                                17<br><span class="text-xs font-normal">Jun</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Entrega de proyecto final</p>
+                                <span class="text-sm text-[#4e6797]">Curso de Python</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-[#e7ebf3] rounded-xl p-3">
+                            <div
+                                class="flex flex-col items-center justify-center w-12 h-12 bg-[#306de8] text-white rounded-lg font-bold">
+                                18<br><span class="text-xs font-normal">Jun</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-[#0e121b]">Examen parcial</p>
+                                <span class="text-sm text-[#4e6797]">Curso de JavaScript</span>
+                            </div>
+                        </div>
+                        <!-- ...más actividades -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

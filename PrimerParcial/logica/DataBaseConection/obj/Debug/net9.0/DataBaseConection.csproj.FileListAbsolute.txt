@@ -1,0 +1,15 @@
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\bin\Debug\net9.0\DataBaseConection.exe
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\bin\Debug\net9.0\DataBaseConection.deps.json
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\bin\Debug\net9.0\DataBaseConection.runtimeconfig.json
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\bin\Debug\net9.0\DataBaseConection.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\bin\Debug\net9.0\DataBaseConection.pdb
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.AssemblyInfoInputs.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.AssemblyInfo.cs
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.csproj.CoreCompileInputs.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.sourcelink.json
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\refint\DataBaseConection.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.pdb
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\DataBaseConection.genruntimeconfig.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\DataBaseConection\obj\Debug\net9.0\ref\DataBaseConection.dll

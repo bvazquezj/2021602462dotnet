@@ -1,0 +1,73 @@
+﻿@page
+@model ProductiMtoModel
+@{
+    ViewData["Title"] = "Producto MTO";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="d-flex p-4 justify-content-center align-items-center vh-90">
+    <div class="card p-5 shadow-sm" style="width: 50%;">
+        <h3 class="text-center mb-4">Producto MTO</h3>
+        <form method="POST">
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="Nombre" id="Nombre"
+                    placeholder="Ingrese el nombre del producto" />
+            </div>
+            <div class="mb-3">
+                <label for="Precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" name="Precio" id="Precio"
+                    placeholder="Ingrese el precio del producto" />
+            </div>
+            <div class="mb-3">
+                <label for="Stock" class="form-label">Stock</label>
+                <input type="number" class="form-control" name="Stock" id="Stock"
+                    placeholder="Ingrese la cantidad en stock" />
+            </div>
+            <div class="mb-3">
+                <label for="Descripción" class="form-label">Descripción</label>
+                <input type="text" class="form-control" name="Descripcion" id="Descripción"
+                    placeholder="Ingrese una descripción del producto" />
+            </div>
+            <button class="btn btn-primary w-75 p-3">Guardar</button>
+            <button asp-page="ListaProducto" class="btn btn-secondary w-75 p-3">Cancelar</button>
+        </form>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $(document).ready(function () {
+        $('form').submit(function (event) {
+            event.preventDefault();
+
+            var nombre = $('#Nombre').val().trim();
+            var precio = $('#Precio').val().trim();
+            var stock = $('#Stock').val().trim();
+            var descripcion = $('#Descripción').val().trim();
+            
+            if (!nombre || !precio || !stock || !descripcion) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor, complete todos los campos.',
+                });
+                return;
+            }
+            
+            if (isNaN(precio) || isNaN(stock) || parseFloat(precio) < 0 || parseInt(stock) < 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Precio y Stock deben ser números válidos y no negativos.',
+                });
+                return;
+            }
+
+            // Si todo está bien, enviamos el formulario
+            this.submit();
+        });
+    });
+</script>

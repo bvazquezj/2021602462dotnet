@@ -1,0 +1,42 @@
+@page
+@model CrearModel
+@{
+    ViewData["Title"] = "Crear Lección";
+}
+
+<h2>Crear Lección para el curso: @Model.CursoTitulo</h2>
+
+<form method="post" enctype="multipart/form-data" class="space-y-4">
+    <input type="hidden" asp-for="CursoId" />
+
+    <div>
+        <label asp-for="Leccion.Titulo" class="block font-medium">Título</label>
+        <input asp-for="Leccion.Titulo" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Leccion.Titulo" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Leccion.Contenido" class="block font-medium">Contenido</label>
+        <textarea asp-for="Leccion.Contenido" class="w-full p-2 border rounded"></textarea>
+        <span asp-validation-for="Leccion.Contenido" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="Leccion.VideoFile" class="block text-sm font-medium text-gray-700">Video</label>
+        <input asp-for="Leccion.VideoFile" type="file" accept="video/*"
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+        <span asp-validation-for="Leccion.VideoFile" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Leccion.DuracionMinutos" class="block font-medium">Duración (minutos)</label>
+        <input asp-for="Leccion.DuracionMinutos" type="number" min="1" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Leccion.DuracionMinutos" class="text-red-500 text-sm"></span>
+    </div>
+
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Guardar Lección</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

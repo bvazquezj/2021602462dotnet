@@ -1,0 +1,19 @@
+﻿@page
+@model CreateModel
+
+<h2>Crear Estudiante</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Student.FullName"></label>
+        <input asp-for="Student.FullName" />
+        <span asp-validation-for="Student.FullName"></span>
+    </div>
+    <div>
+        <label asp-for="Student.BirthDate"></label>
+        <input asp-for="Student.BirthDate" type="date" />
+        <span asp-validation-for="Student.BirthDate"></span>
+    </div>
+    <button type="submit">Guardar</button>
+    <a asp-page="Index">Cancelar</a>
+</form>

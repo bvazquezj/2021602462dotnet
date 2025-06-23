@@ -1,0 +1,55 @@
+@page "{id:int}"
+@model CursosOnlineApp.Pages.Cursos.EditarModel
+@{
+    ViewData["Title"] = "Editar Curso";
+}
+
+<h2>Editar Curso</h2>
+
+<form method="post" class="space-y-4">
+    <input type="hidden" asp-for="Curso.Id" />
+
+    <div>
+        <label asp-for="Curso.Titulo" class="block font-medium">Título</label>
+        <input asp-for="Curso.Titulo" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Titulo" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Descripcion" class="block font-medium">Descripción</label>
+        <textarea asp-for="Curso.Descripcion" class="w-full p-2 border rounded"></textarea>
+        <span asp-validation-for="Curso.Descripcion" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Categoria" class="block font-medium">Categoría</label>
+        <input asp-for="Curso.Categoria" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Categoria" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Nivel" class="block font-medium">Nivel</label>
+        <input asp-for="Curso.Nivel" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Nivel" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Precio" class="block font-medium">Precio</label>
+        <input asp-for="Curso.Precio" type="number" step="0.01" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Precio" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.ImagenUrl" class="block font-medium">URL de la imagen (opcional)</label>
+        <input asp-for="Curso.ImagenUrl" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.ImagenUrl" class="text-red-500 text-sm"></span>
+    </div>
+
+    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+        Guardar Cambios
+    </button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

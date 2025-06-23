@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Estudiantes</h2>
+
+<p>
+    <a asp-page="Create">Crear nuevo</a>
+</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Nombre completo</th>
+        <th>Fecha de nacimiento</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var student in Model.Students)
+    {
+        <tr>
+            <td>@student.FullName</td>
+            <td>@student.BirthDate.ToShortDateString()</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@student.Id">Editar</a> |
+                <a asp-page="Details" asp-route-id="@student.Id">Detalles</a> |
+                <a asp-page="Delete" asp-route-id="@student.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

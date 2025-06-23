@@ -1,0 +1,101 @@
+﻿@page
+@model StartTeachModel
+@{
+    ViewData["Title"] = "Comienza a enseñar";
+}
+
+<section class="text-center py-16 px-6">
+  <h1 class="text-4xl font-bold mb-4">Comparte tu conocimiento. Inspira al mundo.</h1>
+  <p class="text-lg mb-6">Crea y publica tus propios cursos en línea con Sabiondo.</p>
+  <a asp-page="/Account/Login" asp-area="Identity" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-full">Comienza a enseñar</a>
+</section>
+
+<!-- Cómo funciona -->
+<section class="py-12 bg-[#f8f9fc]">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Cómo crear y publicar cursos en Sabiondo</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <h3 class="font-semibold mb-2">Crea el contenido del curso</h3>
+        <p class="text-sm text-gray-600">Planifica tus lecciones y sube materiales fácilmente.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <h3 class="font-semibold mb-2">Graba y publica</h3>
+        <p class="text-sm text-gray-600">Usa nuestras herramientas o sube tus propios videos.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <h3 class="font-semibold mb-2">Llega a estudiantes</h3>
+        <p class="text-sm text-gray-600">Promociona tu curso y gana ingresos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Beneficios para instructores -->
+<section class="py-12 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center">Beneficios para instructores</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-blue-600 text-3xl mb-2">🌎</div>
+        <p class="text-sm font-medium">Alcance global</p>
+      </div>
+      <div>
+        <div class="text-blue-600 text-3xl mb-2">🛠️</div>
+        <p class="text-sm font-medium">Constructor de cursos</p>
+      </div>
+      <div>
+        <div class="text-blue-600 text-3xl mb-2">💰</div>
+        <p class="text-sm font-medium">Gana ingresos</p>
+      </div>
+      <div>
+        <div class="text-blue-600 text-3xl mb-2">⏱️</div>
+        <p class="text-sm font-medium">Horario flexible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Llamado a la acción -->
+<section class="bg-blue-100 py-8 text-center">
+  <h3 class="text-xl font-semibold mb-4">Únete a nuestra comunidad de instructores</h3>
+  <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold">Comienza a enseñar hoy</a>
+</section>
+
+<!-- Testimonios -->
+<section class="py-12 px-4">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center">Testimonios de instructores</h2>
+    <div class="space-y-6">
+      <blockquote class="bg-[#f8f9fc] p-6 rounded-xl shadow">
+        <p class="text-gray-700">“Enseñar en Sabiondo me ha dado la oportunidad de llegar a estudiantes de todo el mundo.”</p>
+        <footer class="mt-2 text-sm font-semibold">— Jane Doe</footer>
+      </blockquote>
+      <blockquote class="bg-[#f8f9fc] p-6 rounded-xl shadow">
+        <p class="text-gray-700">“Las herramientas para cursos son muy intuitivas. Creé mi primer curso en solo unos días.”</p>
+        <footer class="mt-2 text-sm font-semibold">— John Smith</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Preguntas frecuentes -->
+<section class="bg-[#f8f9fc] py-12 px-4">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center">Preguntas frecuentes</h2>
+    <div class="space-y-4">
+      <details class="bg-white p-4 rounded-xl shadow">
+        <summary class="cursor-pointer font-medium">¿Cómo empiezo a enseñar en Sabiondo?</summary>
+        <p class="mt-2 text-sm text-gray-600">Solo haz clic en “Comienza a enseñar” y sigue los pasos guiados para publicar tu primer curso.</p>
+      </details>
+      <details class="bg-white p-4 rounded-xl shadow">
+        <summary class="cursor-pointer font-medium">¿Necesito ser profesor profesional?</summary>
+        <p class="mt-2 text-sm text-gray-600">¡Para nada! Cualquier persona con conocimientos valiosos puede ser instructor.</p>
+      </details>
+      <details class="bg-white p-4 rounded-xl shadow">
+        <summary class="cursor-pointer font-medium">¿Tiene algún costo publicar un curso?</summary>
+        <p class="mt-2 text-sm text-gray-600">Publicar es gratis. Compartimos un porcentaje de los ingresos cuando se vende tu curso.</p>
+      </details>
+    </div>
+  </div>
+</section>

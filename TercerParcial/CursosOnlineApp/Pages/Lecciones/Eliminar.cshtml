@@ -1,0 +1,14 @@
+@page "{id:int}"
+@model CursosOnlineApp.Pages.Lecciones.EliminarModel
+@{
+    ViewData["Title"] = "Eliminar Lección";
+}
+
+<h2>Eliminar Lección</h2>
+
+<p>¿Estás seguro que quieres eliminar la lección <strong>@Model.Leccion.Titulo</strong>?</p>
+
+<form method="post">
+    <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Eliminar</button>
+    <a href="/Cursos/Detalle/@Model.Leccion.CursoId" class="ml-2 px-4 py-2 rounded border border-gray-400">Cancelar</a>
+</form>

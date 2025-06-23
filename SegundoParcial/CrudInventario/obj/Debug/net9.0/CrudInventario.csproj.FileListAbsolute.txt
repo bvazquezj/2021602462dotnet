@@ -1,0 +1,237 @@
+<<<<<<< HEAD
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\appsettings.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.staticwebassets.runtime.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.staticwebassets.endpoints.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.exe
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.deps.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.runtimeconfig.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.pdb
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\Google.Protobuf.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Compression.LZ4.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Hash.xxHash.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\MySql.Data.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.csproj.AssemblyReference.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.AssemblyInfoInputs.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.AssemblyInfo.cs
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.csproj.CoreCompileInputs.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.RazorAssemblyInfo.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.RazorAssemblyInfo.cs
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.sourcelink.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\bundle\CrudInventario.styles.css
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\projectbundle\CrudInventario.bundle.scp.css
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\kdzcdqmgmv-b9sayid5wm.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\r78yotg320-61n19gt1b8.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\jg659daso6-xtxxf3hu2r.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\hkaaq8lcc8-t1cqhe9u97.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yoas9fteya-c2jlpeoesf.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\bjg2wg8pxu-sejl45xvog.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\qzv2t21le0-aexeepp0ev.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1c5gmgm4e3-xvp3kq03qx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\5h76yivkm5-ausgxo2sd3.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ba3nzy0ik3-22vffe00uq.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\n16rdmkd3d-cosvhxvwiu.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\prwg3m3ywa-qesaa3a1fm.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1p79uwivvr-fvhpjtyr6v.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\10ugbra51v-tmc1g35s3z.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\4klezm9okr-fsbi9cje9m.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dx3am500cs-rxsg74s51o.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\pc9rsinsh8-ee0r1s7dh0.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3tphwl9s83-q9ht133ko3.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\erqrrgsxlr-jd9uben2k1.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\eb9mjo5wc4-gye83jo8yx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\vggcyprvxj-r4e9w2rdcm.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\w2goguz46z-wl58j5mj3v.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\9ntxwpi84h-c2oey78nd0.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\xj7939qhj7-d4r6k3f320.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dlyk0oi2at-j5mq2jizvt.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dfjdhf06wj-keugtjm085.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\565l08uz2v-nvvlpmu67g.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yti6ymuzz1-zub09dkrxp.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\43btvf4zym-pj5nd1wqec.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\l9wr17bmog-43atpzeawx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\y9s2ocskbo-v0zj4ognzu.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\feewokn9q6-ynyaa8k90p.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\as3lydnqz6-hrwsygsryq.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ptn7wmkwe2-c63t5i9ira.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\xeqjx99o6i-ft3s53vfgj.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ggbdbucdjy-4094rpi4f9.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\x8y30p479s-6pdc2jztkx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\av2sssbp2m-hd3gran6i8.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3i2urr04o4-iovd86k7lj.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\guyqx8ctx1-ltid2c489k.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\aqrhxt0qb5-kbrnm935zg.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yocylg30zf-8vyfqsqgz1.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7lwwphfqp8-y7v9cxd14o.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ho338wfg7s-u9q1upor1n.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yuk16f6j8i-h1s4sie4z3.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ucapbgp35a-4d85u1mtcx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\mgkke77kye-0j3bgjxly4.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\48v2u5125u-03hjc8e09r.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\zf3cevctyk-48y08845bh.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\tb4mfyxmki-356vix0kms.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\gkj9xi9ka8-83jwlth58m.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\y7rmcehq43-mrlpezrjn3.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7hc0paw8dk-worgj0nhwm.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\luozhexwee-gk0pw8i4co.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\lxkn9gyvr0-x0q3zqp4vz.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\v9b79bmw2w-d6nrnj6jjx.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3ge3yuelc5-m9qm4tazc0.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7sbowozjnn-ttgo8qnofa.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\33aim0dl0a-jjsuc0puko.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\cmji34pqb9-9vr69e8ynj.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ot6oknc943-87fc7y1x7t.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\qxxeggh1rm-mlv21k5csn.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\lihoasg26f-tncy661y9j.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1o65b6lhkj-tncy661y9j.gz
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.CrudInventario.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.CrudInventario.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.build.CrudInventario.props
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.CrudInventario.props
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.CrudInventario.props
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInve.55369804.Up2Date
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\refint\CrudInventario.dll
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.pdb
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.genruntimeconfig.cache
+C:\Users\bvazq\RiderProjects\2021602462dotnet\SegundoParcial\CrudInventario\obj\Debug\net9.0\ref\CrudInventario.dll
+=======
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\appsettings.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.staticwebassets.runtime.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.staticwebassets.endpoints.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.exe
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.deps.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.runtimeconfig.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\CrudInventario.pdb
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\Google.Protobuf.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Compression.LZ4.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\K4os.Hash.xxHash.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\MySql.Data.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.csproj.AssemblyReference.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.AssemblyInfoInputs.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.AssemblyInfo.cs
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.csproj.CoreCompileInputs.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.RazorAssemblyInfo.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.RazorAssemblyInfo.cs
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.sourcelink.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\bundle\CrudInventario.styles.css
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\scopedcss\projectbundle\CrudInventario.bundle.scp.css
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\kdzcdqmgmv-b9sayid5wm.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\r78yotg320-61n19gt1b8.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\jg659daso6-xtxxf3hu2r.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\hkaaq8lcc8-bqjiyaj88i.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yoas9fteya-c2jlpeoesf.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\bjg2wg8pxu-erw9l3u2r3.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\qzv2t21le0-aexeepp0ev.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1c5gmgm4e3-d7shbmvgxk.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\5h76yivkm5-ausgxo2sd3.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ba3nzy0ik3-k8d9w2qqmf.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\n16rdmkd3d-cosvhxvwiu.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\prwg3m3ywa-ub07r2b239.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1p79uwivvr-fvhpjtyr6v.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\10ugbra51v-b7pk76d08c.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\4klezm9okr-fsbi9cje9m.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dx3am500cs-rzd6atqjts.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\pc9rsinsh8-ee0r1s7dh0.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3tphwl9s83-dxx9fxp4il.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\erqrrgsxlr-jd9uben2k1.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\eb9mjo5wc4-khv3u5hwcm.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\vggcyprvxj-r4e9w2rdcm.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\w2goguz46z-lcd1t2u6c8.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\9ntxwpi84h-c2oey78nd0.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\xj7939qhj7-tdbxkamptv.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dlyk0oi2at-j5mq2jizvt.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\dfjdhf06wj-06098lyss8.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\565l08uz2v-nvvlpmu67g.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yti6ymuzz1-s35ty4nyc5.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\43btvf4zym-pj5nd1wqec.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\l9wr17bmog-46ein0sx1k.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\y9s2ocskbo-v0zj4ognzu.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\feewokn9q6-37tfw0ft22.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\as3lydnqz6-hrwsygsryq.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ptn7wmkwe2-pk9g2wxc8p.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\xeqjx99o6i-ft3s53vfgj.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ggbdbucdjy-6cfz1n2cew.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\x8y30p479s-6pdc2jztkx.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\av2sssbp2m-493y06b0oq.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3i2urr04o4-iovd86k7lj.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\guyqx8ctx1-vr1egmr9el.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\aqrhxt0qb5-kbrnm935zg.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yocylg30zf-jj8uyg4cgr.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7lwwphfqp8-y7v9cxd14o.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ho338wfg7s-notf2xhcfb.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\yuk16f6j8i-h1s4sie4z3.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ucapbgp35a-63fj8s7r0e.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\mgkke77kye-0j3bgjxly4.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\48v2u5125u-47otxtyo56.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\zf3cevctyk-4v8eqarkd7.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\tb4mfyxmki-356vix0kms.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\gkj9xi9ka8-83jwlth58m.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\y7rmcehq43-mrlpezrjn3.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7hc0paw8dk-lzl9nlhx6b.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\luozhexwee-ag7o75518u.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\lxkn9gyvr0-x0q3zqp4vz.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\v9b79bmw2w-0i3buxo5is.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\3ge3yuelc5-o1o13a6vjx.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\7sbowozjnn-ttgo8qnofa.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\33aim0dl0a-2z0ns9nrw6.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\cmji34pqb9-muycvpuwrr.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\ot6oknc943-87fc7y1x7t.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\qxxeggh1rm-mlv21k5csn.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\lihoasg26f-tncy661y9j.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\compressed\1o65b6lhkj-tncy661y9j.gz
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.CrudInventario.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.CrudInventario.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.build.CrudInventario.props
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.CrudInventario.props
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.CrudInventario.props
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInve.55369804.Up2Date
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\refint\CrudInventario.dll
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.pdb
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\CrudInventario.genruntimeconfig.cache
+C:\Users\bvazq\OneDrive\Documentos\Tareas\Octavo Semestre\.net\SegundoParcial\CrudInventario\obj\Debug\net9.0\ref\CrudInventario.dll
+>>>>>>> 217f93b5f376d339578d198b20c1169b28e2270b

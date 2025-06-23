@@ -1,0 +1,73 @@
+﻿@page
+@model CursosOnlineApp.Pages.Cursos.CrearModel
+@{
+    ViewData["Title"] = "Crear Curso";
+    Layout = "_Layout";
+}
+
+<h2 class="text-3xl font-bold mb-4">Crear Nuevo Curso</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="text-green-600 font-semibold mb-4">@TempData["Success"]</div>
+}
+
+<form method="post" class="space-y-4">
+    <div asp-validation-summary="All" class="text-red-500 text-sm mb-4"></div>
+
+    <div>
+        <label asp-for="Curso.Titulo" class="block font-medium">Título</label>
+        <input asp-for="Curso.Titulo" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Titulo" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Descripcion" class="block font-medium">Descripción</label>
+        <textarea asp-for="Curso.Descripcion" class="w-full p-2 border rounded"></textarea>
+        <span asp-validation-for="Curso.Descripcion" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Categoria" class="block font-medium">Categoría</label>
+        <select asp-for="Curso.Categoria" class="w-full p-2 border rounded">
+            <option disabled selected value="">-- Selecciona una categoría --</option>
+            <option>Tecnología</option>
+            <option>Diseño</option>
+            <option>Negocios</option>
+            <option>Marketing</option>
+            <option>Idiomas</option>
+            <option>Desarrollo Personal</option>
+            <option>Arte</option>
+            <option>Música</option>
+        </select>
+        <span asp-validation-for="Curso.Categoria" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Nivel" class="block font-medium">Nivel</label>
+        <select asp-for="Curso.Nivel" class="w-full p-2 border rounded">
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+        </select>
+        <span asp-validation-for="Curso.Nivel" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.ImagenUrl" class="block font-medium">Imagen (URL)</label>
+        <input asp-for="Curso.ImagenUrl" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.ImagenUrl" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Curso.Precio" class="block font-medium">Precio</label>
+        <input asp-for="Curso.Precio" type="number" step="0.01" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Curso.Precio" class="text-red-500 text-sm"></span>
+    </div>
+
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Guardar Curso</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

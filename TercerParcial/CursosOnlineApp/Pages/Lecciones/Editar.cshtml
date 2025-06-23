@@ -1,0 +1,50 @@
+@page "{id:int}"
+@model CursosOnlineApp.Pages.Lecciones.EditarModel
+@{
+    ViewData["Title"] = "Editar Lección";
+}
+
+<h2>Editar Lección</h2>
+
+<form method="post" enctype="multipart/form-data" class="space-y-4">
+    <input type="hidden" asp-for="Leccion.Id" />
+    <input type="hidden" asp-for="Leccion.Orden" />
+
+    <div>
+        <label asp-for="Leccion.Titulo" class="block font-medium">Título</label>
+        <input asp-for="Leccion.Titulo" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Leccion.Titulo" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label asp-for="Leccion.Contenido" class="block font-medium">Contenido</label>
+        <textarea asp-for="Leccion.Contenido" class="w-full p-2 border rounded"></textarea>
+        <span asp-validation-for="Leccion.Contenido" class="text-red-500 text-sm"></span>
+    </div>
+
+    <div>
+        <label class="block font-medium">Video (opcional)</label>
+        <input asp-for="VideoFile" type="file" accept="video/*" class="w-full p-2 border rounded" />
+        <span asp-validation-for="VideoFile" class="text-red-500 text-sm"></span>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Leccion.VideoUrl))
+    {
+        <div>
+            <p class="text-sm text-gray-600">Video actual:</p>
+            <video src="@Model.Leccion.VideoUrl" controls class="w-full rounded" />
+        </div>
+    }
+
+    <div>
+        <label asp-for="Leccion.DuracionMinutos" class="block font-medium">Duración (minutos)</label>
+        <input asp-for="Leccion.DuracionMinutos" type="number" min="1" class="w-full p-2 border rounded" />
+        <span asp-validation-for="Leccion.DuracionMinutos" class="text-red-500 text-sm"></span>
+    </div>
+
+    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Guardar Cambios</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

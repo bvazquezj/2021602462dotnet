@@ -1,0 +1,14 @@
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\bin\Debug\net9.0\AgendApp.exe
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\bin\Debug\net9.0\AgendApp.deps.json
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\bin\Debug\net9.0\AgendApp.runtimeconfig.json
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\bin\Debug\net9.0\AgendApp.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\bin\Debug\net9.0\AgendApp.pdb
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.AssemblyInfoInputs.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.AssemblyInfo.cs
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.csproj.CoreCompileInputs.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\refint\AgendApp.dll
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.pdb
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\AgendApp.genruntimeconfig.cache
+C:\Users\bvazq\Documents\Tareas\Octavo Semestre\.net\logica\AgendApp\obj\Debug\net9.0\ref\AgendApp.dll

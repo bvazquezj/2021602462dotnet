@@ -1,0 +1,89 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registrarse";
+}
+
+<h1 class="text-2xl font-bold mb-6">@ViewData["Title"]</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="space-y-4">
+        <h2 class="text-lg font-semibold">Crear nueva cuenta</h2>
+        <hr class="border-gray-300" />
+
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm" role="alert"></div>
+
+        <div>
+            <label asp-for="Input.Nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+            <input asp-for="Input.Nombre"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
+            <span asp-validation-for="Input.Nombre" class="text-red-600 text-sm" />
+        </div>
+
+        <div>
+            <label asp-for="Input.Email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input asp-for="Input.Email"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
+            <span asp-validation-for="Input.Email" class="text-red-600 text-sm" />
+        </div>
+
+        <div>
+            <label asp-for="Input.Password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+            <input asp-for="Input.Password" type="password"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
+            <span asp-validation-for="Input.Password" class="text-red-600 text-sm" />
+        </div>
+
+        <div>
+            <label asp-for="Input.ConfirmPassword" class="block text-sm font-medium text-gray-700">Confirmar
+                contraseña</label>
+            <input asp-for="Input.ConfirmPassword" type="password"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
+            <span asp-validation-for="Input.ConfirmPassword" class="text-red-600 text-sm" />
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Input.Rol" class="block text-sm font-medium text-gray-700">Rol</label>
+            <select asp-for="Input.Rol"
+                class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                @foreach (var rol in Model.RolesDisponibles)
+                {
+                    <option value="@rol.Value">@rol.Text</option>
+                }
+            </select>
+            <span asp-validation-for="Input.Rol" class="text-red-500 text-sm"></span>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700">
+            Registrarse
+        </button>
+    </form>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-2">Registrarse con servicios externos</h3>
+        <hr class="border-gray-300 mb-4" />
+        @if ((Model.ExternalLogins?.Count ?? 0) == 0)
+        {
+            <p class="text-sm text-gray-600">
+                No hay servicios de autenticación externos configurados.
+                <a class="text-blue-500 underline" href="https://go.microsoft.com/fwlink/?LinkID=532715">Aprende a
+                    configurarlos aquí</a>.
+            </p>
+        }
+        else
+        {
+            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                @foreach (var provider in Model.ExternalLogins!)
+                {
+                    <button type="submit" name="provider" value="@provider.Name"
+                        class="mb-2 w-full bg-gray-800 text-white py-2 rounded">
+                        @provider.DisplayName
+                    </button>
+                }
+            </form>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,193 @@
+@page
+@model CursosOnlineApp.Pages.DashBoard.AdminModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Panel de Administrador";
+    Layout = "_Layout";
+    var user = await UserManager.GetUserAsync(User);
+    var primerNombre = user?.Nombre?.Split(' ')[0];
+}
+
+<div class="min-h-screen bg-[#f8f9fc] py-8 px-4 md:px-12 font-sans">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-[#0e121b]">Panel de Administrador</h1>
+                <p class="text-[#4e6797] mt-1">Gestiona usuarios, estadísticas, contenido y configuración del sistema.</p>
+            </div>
+            <div class="flex gap-3">
+                <button class="flex items-center gap-2 bg-[#306de8] text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#2453b3] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Nuevo usuario
+                </button>
+                <button class="flex items-center gap-2 bg-[#e7ebf3] text-[#306de8] px-4 py-2 rounded-lg font-semibold shadow hover:bg-[#d0d7e7] transition">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Notificaciones
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                <!-- Site-wide Statistics -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 3v18h18" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 13l3-3 4 4 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Estadísticas generales</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span class="text-3xl font-bold text-[#306de8]">42</span>
+                            <span class="text-[#4e6797] mt-1">Cursos</span>
+                        </div>
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span class="text-3xl font-bold text-[#306de8]">1,200</span>
+                            <span class="text-[#4e6797] mt-1">Inscripciones</span>
+                        </div>
+                        <div class="bg-[#f8f9fc] rounded-xl p-4 flex flex-col items-center">
+                            <span class="text-3xl font-bold text-[#306de8]">$15,000</span>
+                            <span class="text-[#4e6797] mt-1">Ingresos</span>
+                        </div>
+                    </div>
+                    <!-- Placeholder for chart -->
+                    <div class="mt-6">
+                        <div class="bg-[#e7ebf3] rounded-xl h-40 flex items-center justify-center text-[#4e6797]">
+                            [Gráfica de actividad del sitio]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Moderation Tools -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Moderación de contenido</h2>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-sm text-left text-[#0e121b]">
+                            <thead class="text-xs uppercase bg-[#e7ebf3] text-[#4e6797]">
+                                <tr>
+                                    <th class="px-4 py-2">Curso</th>
+                                    <th class="px-4 py-2">Profesor</th>
+                                    <th class="px-4 py-2">Estado</th>
+                                    <th class="px-4 py-2">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-[#f8f9fc]">
+                                    <td class="px-4 py-2 font-medium">React desde cero</td>
+                                    <td class="px-4 py-2">María López</td>
+                                    <td class="px-4 py-2">Pendiente</td>
+                                    <td class="px-4 py-2 flex gap-2">
+                                        <button class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#2453b3] transition">Aprobar</button>
+                                        <button class="bg-[#e53e3e] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#b91c1c] transition">Rechazar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 font-medium">Python Intermedio</td>
+                                    <td class="px-4 py-2">Juan Pérez</td>
+                                    <td class="px-4 py-2">Pendiente</td>
+                                    <td class="px-4 py-2 flex gap-2">
+                                        <button class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#2453b3] transition">Aprobar</button>
+                                        <button class="bg-[#e53e3e] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#b91c1c] transition">Rechazar</button>
+                                    </td>
+                                </tr>
+                                <!-- ...más cursos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- System Settings -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Configuración del sistema</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-4">
+                            <span class="text-[#0e121b] font-medium">Modo de mantenimiento</span>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer">
+                                <div class="w-11 h-6 bg-[#e7ebf3] peer-focus:outline-none rounded-full peer peer-checked:bg-[#306de8] transition"></div>
+                                <span class="ml-3 text-sm text-[#4e6797]">Activado</span>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between bg-[#f8f9fc] rounded-xl p-4">
+                            <span class="text-[#0e121b] font-medium">Permitir nuevos registros</span>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-[#e7ebf3] peer-focus:outline-none rounded-full peer peer-checked:bg-[#306de8] transition"></div>
+                                <span class="ml-3 text-sm text-[#4e6797]">Activado</span>
+                            </label>
+                        </div>
+                        <!-- ...más configuraciones -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-col gap-8">
+                <!-- User Management -->
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-7 h-7 text-[#306de8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m9-4a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2 class="text-xl font-semibold text-[#0e121b]">Gestión de usuarios</h2>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-sm text-left text-[#0e121b]">
+                            <thead class="text-xs uppercase bg-[#e7ebf3] text-[#4e6797]">
+                                <tr>
+                                    <th class="px-4 py-2">Nombre</th>
+                                    <th class="px-4 py-2">Rol</th>
+                                    <th class="px-4 py-2">Correo</th>
+                                    <th class="px-4 py-2">Estado</th>
+                                    <th class="px-4 py-2">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-[#f8f9fc]">
+                                    <td class="px-4 py-2 font-medium">Ana Torres</td>
+                                    <td class="px-4 py-2">Estudiante</td>
+                                    <td class="px-4 py-2">ana@email.com</td>
+                                    <td class="px-4 py-2">Activo</td>
+                                    <td class="px-4 py-2 flex gap-2">
+                                        <button class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#2453b3] transition">Editar</button>
+                                        <button class="bg-[#e53e3e] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#b91c1c] transition">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2 font-medium">Carlos Ruiz</td>
+                                    <td class="px-4 py-2">Profesor</td>
+                                    <td class="px-4 py-2">carlos@email.com</td>
+                                    <td class="px-4 py-2">Activo</td>
+                                    <td class="px-4 py-2 flex gap-2">
+                                        <button class="bg-[#306de8] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#2453b3] transition">Editar</button>
+                                        <button class="bg-[#e53e3e] text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-[#b91c1c] transition">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <!-- ...más usuarios -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
